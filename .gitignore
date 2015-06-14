@@ -3,4 +3,9 @@
 
 #emacs files
 *~
-#*#
+\#*#
+.#*
+
+.pgpass
+
+node_modules/
