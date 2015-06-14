@@ -4,9 +4,11 @@ const
     express = require('express'),
     app = express(),
     db = require('./models'),
-    morgan = require('morgan');
+    morgan = require('morgan'),
+    bodyParser = require('body-parser');
 
 app.use(morgan('combined'));
+app.use(bodyParser.json());
 
 const config = {
     beerdb : global.db,
