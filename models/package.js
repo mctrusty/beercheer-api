@@ -1,8 +1,14 @@
 module.exports = function(sequelize, DataTypes) {
-    return sequelize.define('package', {
+    return sequelize.define('pkg', {
 	id: DataTypes.INTEGER,
-	size: DataTypes.STRING,
+	size: {
+	    type: DataTypes.DECIMAL,
+	    references: {
+		model: sequelize.Size,
+		key: 'us_oz'
+	    }
+	},
 	qty: DataTypes.INTEGER,
-	pkg: DataTypes.STRING
+	container: DataTypes.STRING
     });
 }

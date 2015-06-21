@@ -1,0 +1,17 @@
+{   
+    "store": {
+        "googleId": "ChIJWx_qgUWPa4cROuq75SvZVyU",
+        "name": "Ralston Square Liquors"
+    },
+    "beer": {
+        "beer": "Reverend",
+        "brewer": "Avery"
+    },
+    "price": 7.99,
+    "package": {
+        "qty": 6,
+        "size": 12,
+        "container": "can"
+    }
+}
+

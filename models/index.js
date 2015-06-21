@@ -44,14 +44,19 @@ if (!global.hasOwnProperty('db')) {
             protocol: 'postgres',
             port:     port,
             host:     host,
-	    omitNull: true
+	    omitNull: true,
+	    logging: console.log
         };
         var sq = new Sequelize(dbname, user, password, config);
     }
     global.db = {
         Sequelize: Sequelize,
         sequelize: sq,
-        Beer: sq.import(__dirname + '/beer')
+        Beer: sq.import(__dirname + '/beer'),
+	Store: sq.import(__dirname + '/store'),
+	Size: sq.import(__dirname + '/beersize'),
+	Package: sq.import(__dirname + '/package'),
+	Price: sq.import(__dirname + '/beerprice')
     };
 }
 module.exports = global.db;
