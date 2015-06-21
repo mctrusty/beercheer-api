@@ -10,5 +10,9 @@ module.exports = function(sequelize, DataTypes) {
 	},
 	qty: DataTypes.INTEGER,
 	container: DataTypes.STRING
-    });
+    },
+    {
+        freezeTableName: true
+    }
+);
 }

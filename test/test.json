@@ -4,14 +4,14 @@
         "name": "Ralston Square Liquors"
     },
     "beer": {
-        "beer": "Reverend",
-        "brewer": "Avery"
+        "beer": "Great Divide",
+        "brewer": "Yeti"
     },
-    "price": 7.99,
+    "price": 11.99,
     "package": {
-        "qty": 6,
-        "size": 12,
-        "container": "can"
+        "qty": 1,
+        "size": 22,
+        "container": "bottle"
     }
 }
 

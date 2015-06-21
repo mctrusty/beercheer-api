@@ -1,5 +1,5 @@
 var uu = require('underscore');
-var qstring = "SELECT * FROM beers WHERE to_tsvector(coalesce(beer,'1') || ' ' || coalesce(brewer, '')) @@ plainto_tsquery(:qterms)";
+var qstring = "SELECT * FROM beer_deals WHERE to_tsvector(coalesce(beer,'1') || ' ' || coalesce(brewer, '')) @@ plainto_tsquery(:qterms)";
 module.exports = function(sequelize, DataTypes){
     return sequelize.define("beer", {
 	beer: {
