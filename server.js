@@ -2,6 +2,7 @@
 'use strict';
 const 
     express = require('express'),
+    cors = require('cors'),
     app = express(),
     db = require('./models'),
     morgan = require('morgan'),
@@ -9,6 +10,7 @@ const
 
 app.use(morgan('combined'));
 app.use(bodyParser.json());
+app.use(cors());
 
 const config = {
     beerdb : global.db,
