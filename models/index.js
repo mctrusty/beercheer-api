@@ -53,10 +53,11 @@ if (!global.hasOwnProperty('db')) {
         Sequelize: Sequelize,
         sequelize: sq,
         Beer: sq.import(__dirname + '/beer'),
-	Store: sq.import(__dirname + '/store'),
-	Size: sq.import(__dirname + '/beersize'),
-	Package: sq.import(__dirname + '/package'),
-	Price: sq.import(__dirname + '/beerprice')
+		Store: sq.import(__dirname + '/store'),
+		Size: sq.import(__dirname + '/beersize'),
+		Package: sq.import(__dirname + '/package'),
+		Price: sq.import(__dirname + '/beerprice'),
+		Brewer: sq.import(__dirname + '/brewer')
     };
 }
 module.exports = global.db;
