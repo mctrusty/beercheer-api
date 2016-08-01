@@ -20,6 +20,6 @@ const config = {
 console.log('adding libs\n');
 require('./lib/beer-search.js')(config, app);
 
-app.listen(3000, function(){
+app.listen(process.env.port || 3000, function(){
     console.log('ready captain!');
 });
