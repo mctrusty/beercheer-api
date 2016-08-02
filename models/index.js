@@ -20,6 +20,7 @@ if (!global.hasOwnProperty('db')) {
         var host = match[3];
         var port = match[4];
         var dbname = match[5];
+		console.log('connected: ' + user + ':' + password + '@' + host + ':' + '/' + dbname);
         var config =  {
             dialect:  'postgres',
             protocol: 'postgres',
