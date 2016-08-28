@@ -1,0 +1,1 @@
+DATABASE_URL='postgres://beerlover@ec2-52-201-236.181.compute-1.amazonaws.com:5432/tnst4bb54jbto'
